@@ -12,7 +12,7 @@ import ModeNightIcon from '@mui/icons-material/ModeNight';
 const Sidebar = ({mode, setMode}) => {
   return (
     <Box flex={1} padding={2} sx={{display: {xs: "none", sm: "block"}}}>
-      <Box position="fixed">
+      <Box color={`${mode == "light" ? "black": "white"}`} position="fixed">
         <List>
           <ListItem disablePadding>
             <ListItemButton component="a" href="#home">
